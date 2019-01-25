@@ -1,0 +1,3 @@
+[submodule "cwuitest/cwsdk"]
+	path = cwuitest/cwsdk
+	url = https://github.com/Andoryuuta/cwsdk
