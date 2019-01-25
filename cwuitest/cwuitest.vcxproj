@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{45787A6E-F67F-4CFA-AF9B-52DC40253937}</ProjectGuid>
+    <RootNamespace>cwuitest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BM.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\ChatWidget.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Chunk.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Creature.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Field.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\GameController.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Region.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Speech.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Sprite.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\World.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube\Zone.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube_funcs.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\cube_util.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\globals.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\Matrix4x4.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\memory_management.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\msvc_bincompat\map.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\msvc_bincompat\string.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\msvc_bincompat\vector.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\msvc_bincompat\wstring.cpp" />
+    <ClCompile Include="cwsdk\cwsdk\Vector3.cpp" />
+    <ClCompile Include="imgui\examples\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\examples\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BM.h" />
+    <ClInclude Include="cwsdk\cwsdk.h" />
+    <ClInclude Include="cwsdk\cwsdk\assert_size.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\ChatWidget.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Chunk.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Creature.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Database.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Field.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\GameController.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Region.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Speech.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Sprite.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\SpriteManager.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\World.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\WorldMap.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube\Zone.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube_funcs.h" />
+    <ClInclude Include="cwsdk\cwsdk\cube_util.h" />
+    <ClInclude Include="cwsdk\cwsdk\dll_exports.h" />
+    <ClInclude Include="cwsdk\cwsdk\dx9_stub.h" />
+    <ClInclude Include="cwsdk\cwsdk\globals.h" />
+    <ClInclude Include="cwsdk\cwsdk\Matrix4x4.h" />
+    <ClInclude Include="cwsdk\cwsdk\memory_management.h" />
+    <ClInclude Include="cwsdk\cwsdk\msvc_bincompat.h" />
+    <ClInclude Include="cwsdk\cwsdk\msvc_bincompat\map.h" />
+    <ClInclude Include="cwsdk\cwsdk\msvc_bincompat\string.h" />
+    <ClInclude Include="cwsdk\cwsdk\msvc_bincompat\vector.h" />
+    <ClInclude Include="cwsdk\cwsdk\msvc_bincompat\wstring.h" />
+    <ClInclude Include="cwsdk\cwsdk\non_cube.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Attribute.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\ContinuousArrayAttribute.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\ContinuousAttribute.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\DiscreteAttribute.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Display.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Keyable.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Matrix.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\MeshShape.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\NamedObject.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Node.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Object.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Shape.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\SmoothMeshShape.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Transformation.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Vector.h" />
+    <ClInclude Include="cwsdk\cwsdk\plasma\Widget.h" />
+    <ClInclude Include="cwsdk\cwsdk\Vector3.h" />
+    <ClInclude Include="imgui\examples\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\examples\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
